@@ -1,0 +1,10 @@
+clients:
+  aliyun-cdt:
+    type: cdt.aliyun
+    config:
+      AccessKeyId: "your-access-key-id"
+      AccessKeySecret: "your-access-key-secret"
+      Endpoint: "cdt.aliyuncs.com"
+collectors:
+  - clientRef: "aliyun-cdt"
+    collectors: ["traffic"]
